@@ -7,6 +7,7 @@ from treeset import TreeSet
 import sys
 import argparse
 import fileinput
+import time
 
 #read arguments
 parser = argparse.ArgumentParser(description='Minimum Spanning Tree (MST) Solver')
@@ -30,9 +31,9 @@ if(args.infile != None):
             #create edges
             if line[0] == "e":
                 l = line.split(" ")
-                u = int(l[2].strip())
-                v = int(l[3].strip())
-                w = int(l[4].strip())
+                u = int(l[1].strip())
+                v = int(l[2].strip())
+                w = int(l[3].strip())
                 edge = Edge(u, v, w)
                 edges.append(edge)
                 if u not in vertices:
