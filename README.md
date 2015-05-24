@@ -3,7 +3,8 @@ Minimum Spanning tree solver. Implemented based Kruskal's algorithm using a d-he
 a priority queue of edges and rooted trees for disjoint sets.
 
 Input graph has to be in DIMACS graph format
-example input can be found in sample_input.txt
+
+Example input can be found in sample_input.txt
 
 
 example run:
